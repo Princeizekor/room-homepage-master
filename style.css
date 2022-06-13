@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    scroll-behavior: smooth;
+    font-family: 'League Spartan', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsl(0, 0%, 63%);
+    border-radius: 50px;
+}
+#head {
+    width: 100%;
+}
+.grid {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 840px auto;
+}
+.hambar {
+    display: none;
+}
+.close {
+    display: none;
+}
+.room1 {
+    height: 530px;
+    width: 100%;
+}
+.room1-wrap {
+    display: none;
+}
+.img {
+    position: absolute;
+    width: 840px;
+    top: 0%;
+    z-index: -1;
+    height: 530px;
+    display: none;
+}
+#navbar {
+    width: 100%;
+    display: flex;
+    padding: 30px 50px 30px 50px;
+    margin-top: 5%;
+}
+.image-wrap {
+    margin-right: 25px;
+}
+.list {
+    display: flex;
+}
+.list li {
+    padding: 0px 20px 0px 20px;
+    list-style-type: none;
+    font-weight: 500;
+}
+.list li a {
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 3px;
+}
+.list li a:hover {
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+}
+.room2 {
+    padding: 100px;
+    position: relative;
+}
+.room2-wrap {
+    display: none;
+}
+.fades {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: 85%}
+    to {opacity: 1}
+  }
+
+.discover {
+    font-size: 37px;
+    font-weight: 700;
+    margin-bottom: 10%;
+}
+.provide {
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(0, 0%, 63%);
+    line-height: 18px;
+    margin-bottom: 5%;
+}
+.shop {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: hsl(0, 0%, 0%);
+    font-weight: 600;
+    letter-spacing: 0.6em;
+}
+.shop:hover {
+    color: hsl(0, 0%, 63%);
+}
+.buttons {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    background-color: hsl(0, 0%, 0%);
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.btn1 {
+    background: transparent;
+    width: 48px;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+.box {
+    display: none;
+}
+.btn1:hover {
+    background-color: hsl(0, 0%, 27%);
+}
+.btn2 {
+    background: transparent;
+    width: 48px;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+.btn2:hover {
+    background-color: hsl(0, 0%, 27%);
+}
+#main {
+    width: 100%;
+}
+.grid2 {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 420px 500px 420px;
+}
+.room3 {
+    height: 260px;
+}
+.room4 {
+    padding: 50px;
+}
+.about {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    margin-bottom: 5%;
+}
+.faq {
+    font-size: 13.2px;
+    font-weight: 500;
+    color: hsl(0, 0%, 63%);
+    line-height: 20px;
+}
+.room5 {
+    height: 260px;
+}
+ @media screen and (min-width: 541px) and (max-width: 767px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .img {
+        position: absolute;
+        width: 100%;
+        top: 0%;
+        z-index: -1;
+        height: 530px;
+        display: none;
+    }
+    .box {
+        width: 100px;
+        height: 50px;
+        display: flex;
+        background-color: hsl(0, 0%, 0%);
+        justify-content: space-between;
+        position: absolute;
+        top: 480px;
+        right: 0%;
+    }
+    .buttons {
+        display: none;
+    }
+    .room2 {
+        padding: 30px;
+    }
+    .discover {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .grid2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .room3 {
+        width: 100%;
+        height: auto;
+    }
+    .room3 img {
+        width: 100%;
+        height: auto;
+    }
+    .room4 {
+        padding: 30px;
+    }
+    .room5 {
+        width: 100%;
+        height: auto;
+    }
+    .room5 img {
+        width: 100%;
+        height: auto;
+    }
+} 
+@media screen and (max-width: 540px) {
+    .hambar {
+        display: block;
+        position: absolute;
+        left: 50px;
+    }
+    .close {
+        position: absolute;
+        background-color: hsl(0, 0%, 100%);
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        padding: 50px 0px 0px 50px;
+        height: 100px;
+        align-items: center;
+        text-align: center;
+    }
+    .image-wrap {
+        margin-left: 105px;
+    }
+    .clear {
+        display: flex;
+    }
+    .clear li {
+        list-style-type: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .clear li a {
+        text-decoration: none;
+        color: hsl(0, 0%, 0%);
+        font-weight: 700;
+    }
+    .list {
+        display: none;
+    }
+    .grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .img {
+        position: absolute;
+        width: 100%;
+        top: 0%;
+        z-index: -1;
+        height: auto;
+        display: none;
+    }
+    .room1 {
+        height: 220px;
+    }
+    .box {
+        width: 100px;
+        height: 50px;
+        display: flex;
+        background-color: hsl(0, 0%, 0%);
+        justify-content: space-between;
+        position: absolute;
+        top: 178px;
+        right: 0%;
+    }
+    .buttons {
+        display: none;
+    }
+    .room2 {
+        padding: 30px;
+    }
+    .discover {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .grid2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .room3 {
+        width: 100%;
+        height: auto;
+    }
+    .room3 img {
+        width: 100%;
+        height: auto;
+    }
+    .room4 {
+        padding: 30px;
+    }
+    .room5 {
+        width: 100%;
+        height: auto;
+    }
+    .room5 img {
+        width: 100%;
+        height: auto;
+    }
+}
